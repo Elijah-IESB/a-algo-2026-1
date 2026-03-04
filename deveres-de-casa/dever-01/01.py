@@ -7,26 +7,30 @@ def insertion_sort(lista):
         j = i - 1
         while j >= 0 and lista[j] > chave:
             lista[j + 1] = lista[j]
-            j -= 1
+            j = j - 1
         lista[j + 1] = chave
 
-# 1. Solicita o tamanho da lista
-n = int(input("Digite o tamanho da lista (n): "))
+while True:
+    print("\nTeste do Insertion Sort")
+    print("Digite 0 para encerrar o programa")
 
-# 2. Gera uma lista aleatória para testar (pior cenário seria uma lista decrescente)
-lista_teste = [random.randint(0, n * 10) for _ in range(n)]
+    n = int(input("Digite o tamanho da lista (n): "))
 
-print(f"\nOrdenando {n} elementos...")
+    if n == 0:
+        print("Encerrando programa...")
+        break
 
-# 3. Medição do tempo
-inicio = time.time()  # Marca o tempo inicial
-insertion_sort(lista_teste)
-fim = time.time()     # Marca o tempo final
+    lista = []
+    for i in range(n):
+        numero = random.randint(0, n * 10)
+        lista.append(numero)
 
-tempo_total = fim - inicio
+    print("Ordenando lista...")
 
-# 4. Exibe o resultado
-print("-" * 30)
-print(f"Ordenação concluída!")
-print(f"Tempo de execução: {tempo_total:.6f} segundos")
-print("-" * 30)
+    inicio = time.time()
+    insertion_sort(lista)
+    fim = time.time()
+
+    tempo = fim - inicio
+
+    print("Tempo de execução:", tempo, "segundos")
