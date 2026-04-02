@@ -25,11 +25,11 @@ def ler_inteiro_positivo(mensagem: str) -> int:
         try:
             valor = int(input(mensagem))
             if valor < 1:
-                print("❌ Digite um número maior ou igual a 1.")
+                print(" Digite um número maior ou igual a 1.")
                 continue
             return valor
         except ValueError:
-            print("❌ Entrada inválida. Digite um número inteiro.")
+            print(" Entrada inválida. Digite um número inteiro.")
 
 
 def menu():
@@ -57,7 +57,7 @@ def menu():
             break
 
         else:
-            print("❌ Opção inválida.")
+            print(" Opção inválida.")
 
 
 # Recursivo chama a função dentro dela mesma.
