@@ -1,5 +1,7 @@
 # Dever 10
 
+Grupo 8
+
 Aplicacao do algoritmo KNN no dataset Breast Cancer Wisconsin.
 
 Arquivos:

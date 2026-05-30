@@ -1,5 +1,7 @@
 # Dever 13
 
+Trabalho do Grupo 5
+
 Dever de Casa: O Desafio da Arvore Geradora Maxima.
 
 O codigo usa o algoritmo de Kruskal modificado para escolher as arestas de
