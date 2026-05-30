@@ -1,0 +1,36 @@
+Algoritmo KNN - Aplicacao Medica
+Dataset: Breast Cancer Wisconsin
+
+Configuracao usada:
+- Dataset carregado com sklearn.datasets.load_breast_cancer()
+- Separacao treino/teste: 80% treino e 20% teste
+- Normalizacao: StandardScaler
+- Valores de K testados: 1, 3 e 5
+- Metricas testadas: Euclidiana e Manhattan
+- random_state: 42
+
+Resultados de acuracia:
+- K = 1 | Euclidiana | Acuracia = 0.9386
+- K = 1 | Manhattan  | Acuracia = 0.9298
+- K = 3 | Euclidiana | Acuracia = 0.9825
+- K = 3 | Manhattan  | Acuracia = 0.9649
+- K = 5 | Euclidiana | Acuracia = 0.9561
+- K = 5 | Manhattan  | Acuracia = 0.9649
+
+Perguntas a responder:
+
+1. Qual K teve melhor desempenho?
+O melhor desempenho foi obtido com K = 3.
+
+2. Qual metrica obteve melhor resultado?
+A metrica euclidiana obteve o melhor resultado quando combinada com K = 3,
+alcancando acuracia de 0.9825.
+
+3. O que aconteceu com K muito pequeno?
+Com K muito pequeno, como K = 1, o modelo fica mais sensivel a ruidos e casos
+isolados da base de treino. Isso reduziu a acuracia em comparacao com K = 3.
+
+4. Por que normalizar e importante?
+Normalizar e importante porque o KNN calcula distancias entre amostras.
+Sem normalizacao, caracteristicas com valores numericos maiores podem dominar
+o calculo da distancia, prejudicando a classificacao.
