@@ -1,6 +1,6 @@
 # Dever 13
 
-Trabalho do Grupo 5
+Trabalho do Grupo 6
 
 Dever de Casa: O Desafio da Arvore Geradora Maxima.
 
